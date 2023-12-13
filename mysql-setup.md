@@ -29,9 +29,18 @@ Install the MySQLdb module:
 Install MySQL client for Python:
 ### pip install mysqlclient
 
-# list all the tables using the below command
+## list all the tables using the below command
 
-## show tables;
+### show tables;
+
+# connect to a mysql container created using docker compose 
+
+use the below highlighted command to get the ip of the mysql container 
+
+### docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+<img width="689" alt="image" src="https://github.com/sawansolanki/mlflow-setup-complete/assets/64569965/ec06cd13-06b6-411f-ad69-aae96d80a699">
+
+
 
 
 
