@@ -41,9 +41,13 @@ use the below highlighted command to get the ip of the mysql container
 <img width="689" alt="image" src="https://github.com/sawansolanki/mlflow-setup-complete/assets/64569965/ec06cd13-06b6-411f-ad69-aae96d80a699">
 
 ### we also need to configure aws cli in linux machine, to store the mlflow artifacts in bucket.
+
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 sudo apt-get install unzip
+
 unzip awscliv2.zip
+
 sudo ./aws/install
 
 ### once mysql database is connecting with mlflow, we can use this query 
