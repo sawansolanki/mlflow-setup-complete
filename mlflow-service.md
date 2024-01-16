@@ -1,4 +1,4 @@
-##To run mlflow service in production we need to create systemd service file in "/etc/systemd/system" with <serivce_name>.service (eg. - model.service)
+## To run mlflow service in production we need to create systemd service file in "/etc/systemd/system" with <serivce_name>.service (eg. - model.service)
 
 [Unit]
 Description=MLflow-tracking-server
@@ -16,12 +16,15 @@ ExecStart=/bin/bash -c 'mlflow server --host 0.0.0.0 --port 8080 --backend-store
 WantedBy=basic.target
 
 
-###sudo systemctl daemon-reload 
+### sudo systemctl daemon-reload 
 
-###sudo systemctl enable {service-name}
+### sudo systemctl enable {service-name}
 
-###sudo systemctl start {service-name}
+### sudo systemctl start {service-name}
 
-###sudo systemctl status {service-name}
+### sudo systemctl status {service-name}
 
 
+## once the service is up and running use the below command to check the logs of service in case logs checking
+
+journalctl -u {service-name}.service
