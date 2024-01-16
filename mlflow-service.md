@@ -17,7 +17,9 @@ WantedBy=basic.target
 
 
 ###sudo systemctl daemon-reload 
+
 ###sudo systemctl enable <service-name> 
+
 ###sudo systemctl start <service-name>
 
 ###sudo systemctl status <service-name>
